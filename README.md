@@ -1,24 +1,29 @@
-# README
+# Ruby on Rails Tutorial sample application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the sample application for [*Ruby on Rails Tutorial: Learn Web Development with Rails*](http://www.railstutorial.org/).
 
-Things you may want to cover:
+## Getting started
 
-* Ruby version
+Clone the repo and install the needed gems:
 
-* System dependencies
+```
+$ bundle install --without production
+```
 
-* Configuration
+Next, migrate the database:
 
-* Database creation
+```
+$ rails db:migrate
+```
 
-* Database initialization
+Finally, run the test suite to verify that everything is working correctly:
 
-* How to run the test suite
+```
+$ rails test
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+If the test suite passes, run the server locally:
 
-* Deployment instructions
-
-* ...
+```
+$ rails s
+```
